@@ -10,4 +10,5 @@ Para instalar as dependências do projeto, abra o terminal na pasta do projeto e
 
 ```bash
 npm install
+or
 npm i
