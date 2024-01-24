@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #4CAF50;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #153817;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 80%;
+            max-height: 400px;
+            height: 80%;
+        }
+
+        .card-head {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 5px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #45A049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-head">
+            Seja bem-vindo!
+        </div>
+        <form action="/iniciar" method="post">
+            <div class="card-body">
+                <label for="username">Escolha um nome, por favor:</label>
+                <input type="text" name="nome">
+            </div>
+            <button type="submit" class="button">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>

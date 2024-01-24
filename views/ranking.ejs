@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ranking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-collapse: collapse;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 12px 20px;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ranking de Jogadores</h1>
+    <table>
+        <tr>
+            <th>Posição</th>
+            <th>Nome</th>
+            <th>Pontuação</th>
+        </tr>
+        <% ranking.forEach(function(player, index) { %>
+            <tr>
+                <td>
+                    <%= index + 1 %>
+                </td>
+                <td>
+                    <%= player.nome %>
+                </td>
+                <td>
+                    <%= player.pontuacao %>
+                </td>
+            </tr>
+            <% }); %>
+    </table>
+    <a href="/">GAME</a>
+</body>
+
+</html>
